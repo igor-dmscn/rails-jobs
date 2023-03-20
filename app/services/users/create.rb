@@ -13,7 +13,7 @@ module Users
             login: params[:login]
           )
 
-          CreateNotificationWorker.perform_async(user.id)
+          CreateNotificationJob.new.perform_async(user.id)
         end
 
         user
