@@ -2,7 +2,7 @@
 
 module Users
   class Create
-    class
+    class << self
       def call(params)
         user = User.find_by(email: params[:email])
 
