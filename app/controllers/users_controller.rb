@@ -18,7 +18,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = Users::Create.new(user_params)
+    @user = Users::Create.call(user_params)
 
     respond_to do |format|
       if @user
