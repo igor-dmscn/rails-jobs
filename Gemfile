@@ -72,3 +72,5 @@ group :test do
 end
 
 gem "sidekiq", "~> 6.0"
+
+gem "sidekiq-cron"
